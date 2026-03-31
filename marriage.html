@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Important for mobile screens -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Marriage Estimator</title>
+  <link rel="stylesheet" href="marriage.css">
+  <script src="marriage.js"></script>
+</head>
+<body>
+
+  <main class="app">
+    <h1> Marriage Estimator</h1>
+
+    <div class="field">
+      <label>First Name</label>
+      <input type="text" id="firstName" placeholder="First name">
+    </div>
+
+    <div class="field">
+      <label>Last Name</label>
+      <input type="text" id="lastName" placeholder="Last name">
+    </div>
+
+    <div class="field">
+      <label>Birth Date</label>
+      <input type="date" id="birthDate">
+    </div>
+
+    <div class="field">
+      <label>Number of Exes</label>
+      <input type="number" id="exCount" min="0" value="0">
+    </div>
+
+    <button class="calculate-btn" onclick="calculateMarriage()">
+      Calculate 
+    </button>
+
+    <p class="result" id="result"></p>
+  </main>
+
+ 
+</body>
+</html>

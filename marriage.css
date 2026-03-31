@@ -1,0 +1,93 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile-first layout */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  /* background: linear-gradient(180deg, #ffdde1, #ee9ca7); */
+  background-color: #7b7979;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* App container */
+.app {
+  width: 100%;
+  max-width: 420px; /* Large phones */
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+.field {
+  margin-bottom: 14px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px; /* Prevents iOS zoom */
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Button */
+.calculate-btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 17px;
+  border-radius: 12px;
+  border: none;
+  background: #ff5f7e;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.calculate-btn:active {
+  transform: scale(0.98);
+  background: #e84a67;
+}
+
+/* Result text */
+.result {
+  margin-top: 16px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Extra small phones */
+@media (max-width: 360px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .calculate-btn {
+    font-size: 16px;
+  }
+}
